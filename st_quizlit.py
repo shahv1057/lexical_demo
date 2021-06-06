@@ -10,14 +10,12 @@ def get_vector(s):
     return np.sum(np.array([model[i] for i in normalize(s)]), axis=0)
 
 st.set_page_config(layout='wide',page_title=" 💬 QuizLIT 💬")
+hide_footer_style = """
+    <style>
+    .reportview-container .main footer {visibility: hidden;}
+    """
+st.markdown(hide_footer_style, unsafe_allow_html=True)
 st.title('QuizLIT 💬✍️')
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;} 
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 st.subheader('A Text Semantic Similarity Web App')
 st.write('Created by Veeral Shah, Remi LeBlanc, Catie Cronister, Lucia Page-Harley, \nMin Che, Dashiell Brookhart, Joshua Majano, and Emre Okcular')
 intro_text = "Hello and welcome! \n\nTo use QuizLIT (Patent Pending): \n \nPlease enter two text entries in the \nprovided text boxes and use the Analyze \nbutton to see your results."
