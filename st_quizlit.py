@@ -12,7 +12,7 @@ def get_vector(s):
 st.set_page_config(layout='wide',page_title=" 💬 QuizLIT 💬")
 st.title('QuizLIT 💬✍️')
 hide_streamlit_style = """
-            <style>
+            <style>cd 
             footer {visibility: hidden;}
             </style>
             """
