@@ -18,7 +18,7 @@ st.markdown(hide_footer_style, unsafe_allow_html=True)
 st.title('Lexical💬✍️')
 st.subheader('A Text Semantic Similarity Web App')
 st.write('Created by Veeral Shah, Remi LeBlanc, Catie Cronister, Lucia Page-Harley, \nMin Che, Dashiell Brookhart, Joshua Majano, and Emre Okcular')
-intro_text = "Hello and welcome! \n\nTo use **Lexical**: \n \nPlease enter two text entries in the \nprovided text boxes and use the Analyze \nbutton to see your results."
+intro_text = "Hello and welcome! \n\nTo use Lexical Text Semantic Similarity Analyzer: \n \nPlease enter two text entries in the \nprovided text boxes and use the Analyze \nbutton to see your results."
 st.sidebar.title('Directions:')
 st.sidebar.text(intro_text)
 st.sidebar.multiselect('Subjects:',['Biology','Chemistry','Physics','Calculus','Geometry','World History','U.S History'], ['Biology','Chemistry'])
